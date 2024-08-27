@@ -1,0 +1,9 @@
+<%= form_with model: @task do |task| %>
+  <%= task.label :Title %>
+  <%= task.text_field :title %>
+  <%= task.label :Details %>
+  <%= task.text_field :details %>
+  <%= task.submit %>
+  <%= link_to "Back to list", root_path %>
+
+<% end %>
